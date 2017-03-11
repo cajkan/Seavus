@@ -26,4 +26,16 @@
     
     capitalize($title, $description);
     echo "$title $description";
+    
+    echo "<br>";
+    
+    $i = 1;
+    while($i <= 20){
+        if(($i % 2) == 0){
+            echo "Paren $i <br>";
+        }
+        else{
+            echo "Neparen $i <br>";
+        }
+    }
 ?>
