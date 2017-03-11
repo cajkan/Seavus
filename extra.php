@@ -1,5 +1,8 @@
 <?php
     // EXTRA USEFUL FUNCTIONS
+    
+    //Check if variable is set or not
+    isset($var);
 
     // Formating Numbers
     number_format(400000);
@@ -24,4 +27,16 @@
     
     // Host OS Version 
     echo PHP_OS;
+    
+    echo date("d, m, Y H:i:s");
+    echo $_SERVER['SERVER_NAME'];
+    
+    // SECURITY
+    
+    // Removes slashes \ from variable
+    stripslashes($var);
+    
+    // Normalize string
+    strtolower($var);
+    ucfirst($var);
 ?>
