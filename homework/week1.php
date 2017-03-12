@@ -13,12 +13,13 @@
     //echo qweweqw;
     
     // Zadaca 2
+    $month = "August";
     $date = date('F', time());
-    if($date == "August"){
-        echo "It's August, so it's really hot";
+    if($date == $month){
+        echo "It's $month, so it's really hot";
     }
     else{
-        echo "Not August, so at least not in the peak of the heat";
+        echo "Not $month, so at least not in the peak of the heat";
     }
     
     echo "<br>";
@@ -29,10 +30,10 @@
     $count = 99;
     
     function large_value($var1, $var2, $var3){
-        if($var1 > $var2 && $var1 > $var3){
+        if(($var1 > $var2) && ($var1 > $var3)){
             return $var1;
         }
-        elseif($var2 > $var1 && $var2 > $var3){
+        elseif(($var2 > $var1) && ($var2 > $var3)){
             return $var2;
         }
         else{
